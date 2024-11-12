@@ -19,7 +19,7 @@ from scipy.spatial.distance import squareform
 
 @fill_doc
 class CSP(TransformerMixin, BaseEstimator):
-    u"""M/EEG signal decomposition using the Common Spatial Patterns (CSP).
+    """M/EEG signal decomposition using the Common Spatial Patterns (CSP).
 
     This object can be used as a supervised decomposition to estimate
     spatial filters for feature extraction in a 2 class decoding problem.
