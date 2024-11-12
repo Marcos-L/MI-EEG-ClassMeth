@@ -435,7 +435,7 @@ class Window_band_CSP_eppoch(TransformerMixin,BaseEstimator):
     #    self.fit(Xraw,y)
     #    return self.transform(Xraw)
 #%%
-"""
+
 class Window_band_MM_eppoch(TransformerMixin,BaseEstimator):
     def __init__(self,fs,vtw=[[0,2],[2,4]],f_frec=np.array([[8,30]])):
         self.fs=fs
@@ -485,7 +485,7 @@ class elastic_net_feats(TransformerMixin,BaseEstimator):
   def fit_transform(self,X,y,*_):
     self.fit(X,y)
     return self.transform(X)
-
+"""
 class Lasso_feats(TransformerMixin,BaseEstimator):
   def __init__(self,alpha=0):
     self.alpha=alpha
