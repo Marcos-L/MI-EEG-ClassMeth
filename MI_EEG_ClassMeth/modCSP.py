@@ -59,12 +59,7 @@ class CSP(TransformerMixin, BaseEstimator):
         patterns ordering.
     cov_method_params : dict | None
         Parameters to pass to :func:`mne.compute_covariance`.
-
-        .. versionadded:: 0.16
-    %(rank_None)s
-
-        .. versionadded:: 0.17
-
+        
     Attributes
     ----------
     filters_ :  ndarray, shape (n_channels, n_channels)
