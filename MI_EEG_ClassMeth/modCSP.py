@@ -718,7 +718,7 @@ def _ajd_pham(X, eps=1e-6, max_iter=15):
                 V[[ii, jj], :] = np.dot(tau, V[[ii, jj], :])
         if decr < epsilon:
             break
-    D = np.reshape(A, (n_times, -1, n_times)).transpose(1, 0, 2)
+    D = np.reshape(A, (n_times, -1, n_times)).transe(1, 0, 2)
     return V, D
 
 
@@ -756,11 +756,6 @@ class SPoC(CSP):
         in CSP space. Defaults to 'average_power'.
     cov_method_params : dict | None
         Parameters to pass to :func:`mne.compute_covariance`.
-
-        .. versionadded:: 0.16
-    %(rank_None)s
-
-        .. versionadded:: 0.17
 
     Attributes
     ----------
